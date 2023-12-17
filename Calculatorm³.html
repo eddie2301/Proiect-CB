@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name=" Kubikmeter Rechner, Cubikmeter Rechner, Bodenrechner , Bodencalulator , Bodenrechnen , Auflockerungsfaktor " 
+          content="Boden Kubikmeter Rechner, Cubikmeter Rechner, Auflockerungsfaktor , Bodenrechner, ">
+    <meta name="Kubikmeter Rechner, Cubikmeter Rechner ,Bodenrechner , Bodencalulator , Bodenrechnen , Auflockerungsfaktor" content="Cubikmeter Rechner,Bodenrechner">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bodenrechner</title>
+    <link rel="stylesheet" type="text/css" href="Calculatorm³.css" />
+    <script src="Calculatorm³.js"></script>
+  </head>
+  <body>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  Title                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+
+
+    <h1>Bodens Auflockerungsfaktor Rechner</h1>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Header                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+
+
+
+    <header>
+      <!--<button class="butondark"id="theme-toggle ">Dark</button>-->
+      <label class="switch-container">
+        <input type="checkbox" id="theme-toggle" class="switch-input" />
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <h2>Berechnen Sie die richtige Menge</h2>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Section                                 -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <img class="cbm" src="img/cuboid.webp" alt="Bodenrechner" />
+    <div class="header">
+      <p class="descriere">
+        <span style="--delay: 0s"
+          >Die bekannte Methode „Breite x Länge x Höhe“ funktioniert leider
+          nicht</span
+        >
+        <span style="--delay: 0.2s">
+          bei der Berechnung des Bodenaushubs, für Aushub des Bodens wie :</span
+        >
+        <span style="--delay: 0.3s"
+          >Oberboden, Lehm, Sand, Schluff, usw..Wir haben eine Berechnungsformel
+          erstellt,</span
+        >
+        <span style="--delay: 0.4s">
+          die den Lockerungsfaktor für die häufigsten Situationen und Bodens in
+          Deutschland hinzufügt.</span
+        >
+        <span style="--delay: 0.5s"
+          >wenn Sie eine Erdmenge berechnen müssen, die bei zukünftigen
+          Ausgrabungen anfällt z. B. für Fundamente, Pool , Regentankwasser
+          usw.</span
+        ><br />
+        <span class="red" style="--delay: 1s">
+          Verwenden Sie den untenstehenden Rechner:</span
+        >
+      </p>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                               Calculator                                -->
+    <!-- ----------------------------------------------------------------------- -->
+
+
+    <div class="box">
+      <div class="container">
+        <label class="wählen" for="calculationType"
+          >Wählen Sie die Art des Bodens:</label
+        >
+        <br />
+        <select class="categorie" id="calculationType">
+          <option class="optprop" value="">- Wählen Sie Boden Art-</option>
+          <option class="optprop" value="Oberboden">Oberboden</option>
+          <option class="optprop" value="Sand , Kiessand oder Kies">
+            Sand oder Kiessand 
+          </option>
+          <option class="optprop" value="Grobkies , Geröll oder Schlotter">
+            Grobkies , Geröll oder Schlotter
+          </option>
+          <option class="optprop" value="Lehm oder Mergel">Lehm oder Mergel</option>
+        </select>
+        <br /><br />
+        <label for="length"> Länge (m):</label>
+        <input
+          class="input"
+          type="number"
+          id="length"
+          step="0.01"
+          placeholder="Länge"
+        />
+        <br /><br />
+        <label for="width"> Breite (m):</label>
+        <input
+          class="input"
+          type="number"
+          id="width"
+          step="0.01"
+          placeholder="Breite"
+        />
+        <br /><br />
+        <label for="depth">Tiefe (m):</label>
+        <input
+          class="input"
+          type="number"
+          id="depth"
+          step="0.01"
+          placeholder="Tiefe"
+        />
+        <br /><br />
+        <button class="button" onclick="calculateCubicMeters()">
+          Berechnen
+        </button>
+        <p id="result"></p>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>

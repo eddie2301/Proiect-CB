@@ -1,0 +1,182 @@
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.5s, color 0.5s;
+  
+  
+}
+
+h1{
+  margin-top: 50px;
+}
+
+
+
+.butondark{
+  background-color: #fff;
+  width: 60px;
+  height: 30px;
+  border: 1px solid #222;
+}
+
+
+
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+  
+}
+
+/* Example styles for the header and button */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+}
+
+
+.container {
+  text-align: center;
+  position: relative;  
+  border-radius: 10px;
+  font-size: 18px;
+  border:5px solid rgba(255, 255, 255, 0.2);
+  padding: 25px;
+}
+
+
+.categorie{
+  
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border: 2px solid black;
+  
+}
+
+.box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+
+.input{
+  height: 25px ;
+  width: 70px;
+  border-radius: 3px;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border: 2px solid black;
+}
+
+.button{
+  width: 160px ;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border: 2px solid black;
+  cursor: pointer;
+
+}
+
+
+.button:hover {
+
+background-color: black;
+color: white;
+transition: 0.8s;
+border-color: #EE7D31;
+}
+
+
+
+.descriere{
+  margin-top: 30px;
+  margin-left: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.descriere span{
+  display: block;opacity: 0;
+  animation: reveal .5s forwards var(--delay);
+}
+
+
+@keyframes reveal {
+  from { translate: 0 20px;}
+  to {translate: none; opacity: 1;}
+}
+
+
+.switch-container {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.switch-input:checked + .slider {
+  background-color:darkgrey;
+}
+
+.switch-input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.cbm{
+  width: 320px;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.optprop{
+
+  text-align: center;
+
+}
